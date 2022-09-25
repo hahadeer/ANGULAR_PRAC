@@ -1,0 +1,165 @@
+<!-- <h1>THIS IS FIRST TRY</h1>
+ INTERPOLATION 
+<h1>
+  this is fetched title : {{title}} <br>
+  HIE IM FROM 2nD COMPONENT : {{data}}
+</h1>
+<h2>WE CAN ALSO FETCH FUNCTIONS HERE: {{getVal()}} </h2>
+<h1>WE CAN ALSO PERFORM JAVA IN HTML FILE LIKE 2+2 is : {{2+2}} </h1>
+<h1>WE CAN ALSO PERFORM MATCHES : {{title=='test 01'}} </h1>
+<app-login></app-login> -->
+<!-- <button (click)="getName()">CLick me</button>
+<button (click)="getName1('haddu')">CLick me for name</button>
+<button (click)="getNum(69)">CLick me for lucky num</button> -->
+<!-- <input type="text" #box (keyup)="getVal(box.value)" placeholder="KeyUp">
+<br><br>
+<input type="text" #box1 (keydown)="getVal(box1.value)" placeholder="KeyDown">
+<br><br>
+<input type="text" #box2 (blur)="getVal(box2.value)" placeholder="BLUR">
+<br><br>
+<input type="text" #box3 (input)="getVal(box3.value)" placeholder="BLUR">
+<br><br>
+<h1 (mouseover)="getVal('done')"> PUT MOSE ON ME </h1>
+<br><br>
+<h1 (mouseleave)="getVal('leave')"> leave MOSE ON ME </h1> -->
+<!-- <h1>Get Value from INPUT</h1>
+<input type="text" #box (keyup)="getVal(box.value)" placeholder="Enter Name" name="Username" 
+style="border:2px solid black ; height:40px"/>
+<button (click)="getVal1(box.placeholder)"
+style="border:2px solid black ; height: 40px; margin: 10px; background-color: black; color: aliceblue;">Click To get value</button>
+<p>
+ real time values are : {{displayVal}}
+ <br><br>
+ box value is : {{displayVal1}}
+</p> -->
+<!-- <button (click)="counter('add')">++</button>
+<br><br><br>
+<p>COUNT IS : {{count}}</p>
+<button (click)="counter('sub')">--</button> -->
+<!-- <input  type="text" [disabled]=dact>
+<button (click)="disabler('off')">DISABLE</button>
+<button (click)="disabler('on')">ENABLE</button> -->
+<!-- <h1>{{title}}</h1>
+<br><br> -->
+<!-- <h1 *ngIf="show; then ifBlock else elseBlock"></h1>
+<h1 *ngIf="show=='yes'; then ifBlock else elseBlock"></h1>
+<ng-template #ifBlock>
+If here
+</ng-template>
+<ng-template #elseBlock>
+else here
+</ng-template> -->
+<!-- <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+  Ipsa veritatis atque n
+  Block else elseBlock"></h1>
+<br><br>
+<button (click)="showhide('hide')">HIDE CONTENT</button>
+<br><br>
+<button (click)="showhide('show')">SHOW CONTENT</button>
+<ng-template #ifBlock>
+<h1>consectetur nulla 
+labore perspiciatis! Lorem ipsum dolor sit, amet 
+consectetur adipisicing elit. Dolorem nostrum vel 
+sapiente iste unde iusto nesciunt, quidem corrupti sit 
+beatae rerum animi accusantium obcaecati pariatur nemo 
+blanditiis minus voluptatem impedit?</h1>
+</ng-template>
+<ng-template #elseBlock>
+</ng-template> -->
+<!-- here else if = [ngIf] -->
+
+<!-- <div style="background-color:black; border: 2px solid yellow; text-align: center;">
+  <ng-template [ngIf]="color==='red'">
+    <h1 style="color:red">RED COLOUR TEXT</h1>
+  </ng-template>
+  <ng-template [ngIf]="color==='green'">
+    <h1 style="color: green">Green COLOUR TEXT</h1>
+  </ng-template>
+  <ng-template [ngIf]="color==='blue'">
+    <h1 style="color:blue">BLUE COLOUR TEXT</h1>
+  </ng-template>
+<button (click)="colorselector('red')" style="margin-left:20px ;">FOR RED</button>
+<button (click)="colorselector('blue')" style="margin-left:20px ;">FOR BLUE</button>
+<button (click)="colorselector('green')" style="margin-left:20px ;">FOR GREEN</button>
+</div> -->
+
+<!-- <div [ngSwitch]="color" style="background-color:black; border: 2px solid yellow; text-align: center;">
+<h1 *ngSwitchCase="'red'" style="color: red;">{{color}} COLOR</h1>
+<h1 *ngSwitchCase="'blue'" style="color: blue;">{{color}} COLOR</h1>
+<h1 *ngSwitchCase="'green'" style="color: green;">{{color}} COLOR</h1>
+<h1 *ngSwitchCase="'yellow'" style="color: yellow;">{{color}} COLOR</h1>
+<h1 *ngSwitchDefault  style="color: white;">Unknown COLOR</h1>
+
+
+<button (click)="colorselector('red')" style="margin-left:20px; background-color: red;">FOR RED</button>
+<button (click)="colorselector('blue')" style="margin-left:20px ; background-color: blue;">FOR BLUE</button>
+<button (click)="colorselector('green')" style="margin-left:20px ; background-color: green;">FOR GREEN</button>
+<button (click)="colorselector('yellow')" style="margin-left:20px ; background-color: yellow;">FOR GREEN</button>
+
+</div> -->
+
+<!-- <div>
+<h3 *ngFor="let item of names">{{item}}</h3>
+<h1 *ngFor="let d of detail" >
+{{d.name}}  {{d.age}}  {{d.gender}} {{d.status}}
+</h1>
+</div> -->
+
+<!-- <div>
+  <ul *ngFor="let v of detail">
+    <li>
+      {{v.name}}
+    </li>
+    <li>
+      {{v.gender}}
+    </li>
+    <li>
+      {{v.age}}
+    </li>
+    <li>
+      {{v.grade}}
+    </li>
+    <ul *ngFor="let val of v.sAccounts">
+    <li>
+      {{val}}
+    </li>
+    </ul>
+  </ul>
+</div> -->
+<!-- <app-header> </app-header> -->
+<br/><br/>
+<!-- <form #basicForm="ngForm" (submit)="getData(basicForm.value)" style="margin-left:10px ;">
+      <input type="text" ngModel placeholder="Username" name="name"/> <br/><br/>
+      <input type="text" ngModel placeholder="Email" name="Email"/> <br/><br/>
+      <input type="text" ngModel placeholder="Password" name="password"/> <br/><br/>
+      <button>
+        Register
+      </button>
+      <ul style="list-style-type: none;">
+        <Li>{{userData.name}}</Li>
+        <Li>{{userData.Email}}</Li>
+        <Li>{{userData.password}}</Li>
+      </ul>
+
+</form> -->
+<h1 *ngIf="display">
+  SOmething to be toggle
+</h1>
+<button (click)="toggle()">
+Press to toggle text
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
